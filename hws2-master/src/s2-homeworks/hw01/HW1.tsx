@@ -26,7 +26,7 @@ export type MessageType = {
 }
 type UserType ={
     avatar: string
-    name:string
+    name :string
 }
 type MessageObjType ={
     text: string
