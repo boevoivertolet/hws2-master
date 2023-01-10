@@ -1,35 +1,162 @@
 .greetingForm {
+    width: 1280px;
+    height: 372px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: start;
+    flex-direction: column;
+
 }
 
 .inputAndButtonContainer {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 .error {
+    width: 165px;
+    height: 17px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    color: #CC0000;
 }
 
 .input {
+    width: 372px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+
+
 }
 
 .input:focus {
+
 }
 
 .errorInput {
+    box-sizing: border-box;
+
+    width: 372px;
+    height: 36px;
+    border-radius: 5px;
+
+
+    border: 1px solid #CC0000;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    color: #CC0000;
 }
 
 .button {
+    width: 78px;
+    height: 36px;
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background: #0066CC;
+    border-radius: 3px;
+    margin-bottom: 15px;
+
+    /* identical to box height, or 143% */
+
+    /* Light /140 */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .button:focus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    background: #0066CC;
+    border-radius: 3px;
 }
 
 .button:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    background: #0066CC;
+    border-radius: 3px;
+
 }
 
 .button:disabled {
+    width: 78px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+    margin-left: 12px;
+
+
+    /* Primary/100 */
+    background: #0066CC;
+    opacity: 0.5;
+    border-radius: 3px;
+
 }
 
 .text {
+    margin-bottom: 5px;
+    width: 143px;
+    height: 17px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    color: #000000;
 }

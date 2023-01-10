@@ -1,4 +1,4 @@
-import React, {MouseEventHandler} from 'react'
+import React from 'react'
 import {AffairType} from '../../HW2'
 import s from './Affair.module.css'
 import s2 from '../Affairs.module.css'
