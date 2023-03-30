@@ -2,18 +2,42 @@
 }
 
 .input {
+
+    width: 372px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .inputWrapper {
+
 }
 
 .superInput {
+
+    width: 372px;
+    height: 36px;
+
+    box-sizing: border-box;
+
+
+
+    border: 1px solid red;
+    border-radius: 5px;
+
 }
 
 .errorInput {
+    width: 372px;
+    height: 36px;
+
 }
 
 .errorInput:focus {
+    width: 372px;
+    height: 36px;
+    left: 70px;
+    top: 341px;
 }
 
 .error {
