@@ -15,7 +15,6 @@ const Stand = () => {
             <div className={s.inputs}>
                 {/*совместим со старым кодом:*/}
                 <div>
-
                     <SuperInputText
                         id={'hw4-super-input-like-old'}
                         value={stateForAllInputs}
@@ -24,7 +23,6 @@ const Stand = () => {
                 </div>
                 {/*инпут с ошибкой:*/}
                 <div>
-
                     <SuperInputText
                         id={'hw4-super-input-with-error'}
                         value={stateForAllInputs}
@@ -59,7 +57,7 @@ const Stand = () => {
                 <div>
                     <SuperButton
                         id={'hw4-super-button-disabled'}
-                         xType={'red'}
+                        xType={'red'}
                         disabled
                     >
                         disabled
@@ -93,7 +91,6 @@ const Stand = () => {
                         id={'hw4-super-checkbox-like-old'}
                         checked={stateForAllCheckboxes}
                         onChange={(e) => setChecked(e.currentTarget.checked)}
-                        onChangeChecked={setChecked}
                     />
                 </div>
             </div>
