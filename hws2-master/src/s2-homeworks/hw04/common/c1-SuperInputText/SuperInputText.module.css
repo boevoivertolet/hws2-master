@@ -2,7 +2,6 @@
 }
 
 .input {
-
     width: 372px;
     height: 36px;
     box-sizing: border-box;
@@ -10,19 +9,13 @@
 }
 
 .inputWrapper {
-
+    width: 372px
 }
 
 .superInput {
-
     width: 372px;
     height: 36px;
-
     box-sizing: border-box;
-
-
-
-    border: 1px solid red;
     border-radius: 5px;
 
 }
@@ -30,6 +23,7 @@
 .errorInput {
     width: 372px;
     height: 36px;
+    border: 1px solid red;
 
 }
 
@@ -38,7 +32,10 @@
     height: 36px;
     left: 70px;
     top: 341px;
+    border: 1px solid red;
 }
 
 .error {
+    color: red;
+
 }
