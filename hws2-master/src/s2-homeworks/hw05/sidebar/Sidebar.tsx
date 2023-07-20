@@ -12,9 +12,7 @@ type PropsType = {
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
     const location = useLocation();
 
-    const isActive = (path: string) => {
-        return location.pathname === path ? s.active : '';
-    }
+
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
     return (
@@ -36,7 +34,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
-                        className={isActive(PATH.PRE_JUNIOR)}
+                        className={location.pathname === PATH.PRE_JUNIOR ? s.active : ''}
                     >
                         Pre-junior
                     </NavLink>
@@ -44,7 +42,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
-                        className={isActive(PATH.JUNIOR)}
+                        className={location.pathname === PATH.JUNIOR ? s.active : ''}
                     >
                         Junior
                     </NavLink>
@@ -52,7 +50,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
-                        className={isActive(PATH.JUNIOR_PLUS)}
+                        className={location.pathname === PATH.JUNIOR_PLUS ? s.active : ''}
                     >
                         Junior Plus
                     </NavLink>
