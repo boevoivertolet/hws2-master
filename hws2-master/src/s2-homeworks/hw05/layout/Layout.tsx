@@ -8,10 +8,10 @@ type PropsType = {
 
 export const Layout: FC<PropsType> = ({ children }) => {
     const [open, setOpen] = useState(false)
-    const handleClose = () => alert('closed')
-    // const handleClose = () => setOpen(false)
-    const handleOpen = () => alert('open')
-    // const handleOpen = () => setOpen(true)
+    // const handleClose = () => alert('closed')
+    const handleClose = () => setOpen(false)
+    // const handleOpen = () => alert('open')
+    const handleOpen = () => setOpen(true)
 
     useEffect(() => {
         open && (document.body.style.overflow = 'hidden')
