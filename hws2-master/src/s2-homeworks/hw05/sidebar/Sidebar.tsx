@@ -10,9 +10,8 @@ type PropsType = {
 }
 
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
-    const location = useLocation();
-    const currentPath = location.pathname;
-
+    // const location = useLocation();
+    // const currentPath = location.pathname;
 
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
@@ -32,29 +31,35 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
 
                 <nav  id={'hw5-menu'} className={s.nav}>
                     <NavLink
+                        end
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
-                        // className={({isActive}) => isActive ? s.active : ''}
-                        className={currentPath === PATH.PRE_JUNIOR ? s.active : ''}
+                        className={({isActive}) => isActive ? s.active : ''}
+                        // className={window.location.pathname === PATH.PRE_JUNIOR ? s.active : ''}
+                        // className={currentPath === PATH.PRE_JUNIOR ? s.active : ''}
                     >
                         Pre-junior
                     </NavLink>
                     <NavLink
+                        end
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
-                        // className={({isActive, isPending}) => isActive ? s.active : ''}
-                        className={currentPath === PATH.JUNIOR ? s.active : ''}
+                        className={({isActive, isPending}) => isActive ? s.active : ''}
+                        // className={window.location.pathname === PATH.JUNIOR ? s.active : ''}
+                        // className={currentPath === PATH.JUNIOR ? s.active : ''}
                     >
                         Junior
                     </NavLink>
                     <NavLink
+                        end
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
-                        // className={({isActive}) => isActive ? s.active : ''}
-                        className={currentPath === PATH.JUNIOR_PLUS ? s.active : ''}
+                        className={({isActive}) => isActive ? s.active : ''}
+                        // className={window.location.pathname === PATH.JUNIOR_PLUS ? s.active : ''}
+                        // className={currentPath === PATH.JUNIOR_PLUS ? s.active : ''}
                     >
                         Junior Plus
                     </NavLink>
