@@ -10,8 +10,7 @@ type PropsType = {
 }
 
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
-    // const location = useLocation();
-    // const currentPath = location.pathname;
+
 
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
@@ -36,8 +35,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
                         className={({isActive}) => isActive ? s.active : ''}
-                        // className={window.location.pathname === PATH.PRE_JUNIOR ? s.active : ''}
-                        // className={currentPath === PATH.PRE_JUNIOR ? s.active : ''}
+
                     >
                         Pre-junior
                     </NavLink>
@@ -47,8 +45,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.JUNIOR}
                         onClick={handleClose}
                         className={({isActive, isPending}) => isActive ? s.active : ''}
-                        // className={window.location.pathname === PATH.JUNIOR ? s.active : ''}
-                        // className={currentPath === PATH.JUNIOR ? s.active : ''}
                     >
                         Junior
                     </NavLink>
@@ -58,8 +54,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
                         className={({isActive}) => isActive ? s.active : ''}
-                        // className={window.location.pathname === PATH.JUNIOR_PLUS ? s.active : ''}
-                        // className={currentPath === PATH.JUNIOR_PLUS ? s.active : ''}
                     >
                         Junior Plus
                     </NavLink>
