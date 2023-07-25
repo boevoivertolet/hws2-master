@@ -33,7 +33,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                     <NavLink
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
-                        // onClick={handleClose}
+                        onClick={handleClose}
                         // className={({isActive}) => isActive ? s.active : ''}
                          className={location.pathname === PATH.PRE_JUNIOR ? s.active : ''}
                     >
@@ -42,7 +42,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                     <NavLink
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
-                        // onClick={handleClose}
+                        onClick={handleClose}
                         // className={({isActive, isPending}) => isActive ? s.active : ''}
                         className={location.pathname === PATH.JUNIOR ? s.active : ''}
                     >
@@ -51,7 +51,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                     <NavLink
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
-                        // onClick={handleClose}
+                        onClick={handleClose}
                         // className={({isActive}) => isActive ? s.active : ''}
                         className={location.pathname === PATH.JUNIOR_PLUS ? s.active : ''}
                     >
