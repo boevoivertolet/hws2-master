@@ -1,5 +1,17 @@
 .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    margin: 20px;
 }
 
 .editableSpanContainer {
+    margin: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
