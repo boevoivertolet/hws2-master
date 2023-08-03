@@ -1,23 +1,44 @@
 .item {
+    height: 45px;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+
 }
 
 .item:last-of-type {
+
 }
 
 .users {
+    margin-top: 20px;
+    align-self: flex-start;
+    width: 830px;
+
 }
 
 .buttonsContainer {
+    margin-left: 228px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .thead {
+    height: 36px;
+    background: rgba(229, 229, 229, 1);
+    font-weight: bold ;
 }
+
 
 .nameCol {
 }
 
 .ageCol {
+
+
 }
