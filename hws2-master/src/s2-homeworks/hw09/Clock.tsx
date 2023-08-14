@@ -17,7 +17,7 @@ function Clock() {
         'May',
         'Jun',
         'Jul',
-        'Aug',
+        'August',
         'Sep',
         'Oct',
         'Nov',
