@@ -10,18 +10,18 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     let month = [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
+        'January',
+        'February',
+        'March',
+        'April',
         'May',
-        'Jun',
-        'Jul',
+        'June',
+        'July',
         'August',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
+        'September',
+        'October',
+        'November',
+        'December',
     ];
     let days = [
         'Sunday',
@@ -114,14 +114,14 @@ function Clock() {
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
-                    // disabled={true} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={!!timerId} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
                 >
                     start
                 </SuperButton>
                 <SuperButton
                     id={'hw9-button-stop'}
-                    // disabled={true} // пишут студенты // задизэйблить если таймер не запущен
+                    disabled={!timerId} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}
                 >
                     stop
