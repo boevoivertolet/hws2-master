@@ -1,7 +1,11 @@
 .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    width:  300px;
 }
 
 .clock {
+
 }
 
 .watch {
@@ -11,4 +15,13 @@
 }
 
 .more {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
 }
