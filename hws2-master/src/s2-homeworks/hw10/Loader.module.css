@@ -1,8 +1,10 @@
 .loader {
     /*свг и/или анимация*/
-    width: 50px;
-    height: 50px;
+    margin-left: 30px;
+    width: 70px;
+    height: 70px;
     background-image: url(loader/loader.gif) ;
     background-position: center;
     background-size: cover
+
 }
