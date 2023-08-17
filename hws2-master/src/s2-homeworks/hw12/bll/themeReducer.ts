@@ -2,7 +2,11 @@ const initState = {
     themeId: 1,
 }
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
+type StateType = typeof initState
+
+type ActionType = ChangeThemeIdType
+
+export const themeReducer = (state:StateType = initState, action: ActionType): StateType => { // fix any
     switch (action.type) {
         // дописать
 
@@ -11,4 +15,9 @@ export const themeReducer = (state = initState, action: any): any => { // fix an
     }
 }
 
-export const changeThemeId = (id: number): any => ({ type: 'SET_THEME_ID', id }) // fix any
+export const changeThemeId = (id: number): ChangeThemeIdType => ({ type: 'SET_THEME_ID', id } as const) // fix any
+
+type ChangeThemeIdType = {
+    type: 'SET_THEME_ID'
+    id:number
+}
