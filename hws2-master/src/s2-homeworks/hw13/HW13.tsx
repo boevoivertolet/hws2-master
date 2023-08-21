@@ -36,12 +36,24 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                console.log(res)
                 // дописать
-
-
+                setText(res.data.errorText)
+                setInfo(res.data.info)
+                console.log(res)
             })
             .catch((e) => {
+                setCode(e.code)
+
+                if(e.response.status === 500){
+                    setImage(error500)
+                }else if ( e.response.status === 400){
+                    setImage(error400)
+                }else {
+                    setImage(errorUnknown)
+                }
+                setText(e.message)
+                setInfo('')
+                console.log(e)
                 // дописать
 
             })
