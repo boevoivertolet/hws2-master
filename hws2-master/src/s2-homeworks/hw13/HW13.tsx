@@ -39,28 +39,27 @@ const HW13 = () => {
                 // дописать
                 setText(res.data.errorText)
                 setInfo(res.data.info)
-                // setText('setText')
-                // setInfo('setInfo')
-                console.log(res)
             })
             .catch((e) => {
                 console.log(e.response)
                 if (e.response.status === 500) {
+                    setCode('Ошибка 500!')
                     setImage(error500)
                     setText(e.response.data.errorText)
-                    // setText('setText')
                     setInfo(e.response.data.info)
-                    // setInfo('setInfo')
+
                 } else if (e.response.status === 400) {
+                    setCode('Ошибка 400!')
                     setImage(error400)
-                    // setText('setText')
                     setText(e.response.data.errorText)
-                    // setInfo('setInfo')
                     setInfo(e.response.data.info)
                 } else {
+                    setCode('Error!')
                     setImage(errorUnknown)
+                    setText('Network error')
+                    setInfo('AxiosError')
                 }
-                setInfo(e.code)
+
 
                 // дописать
 
