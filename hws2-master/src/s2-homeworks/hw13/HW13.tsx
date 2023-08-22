@@ -39,24 +39,29 @@ const HW13 = () => {
                 // дописать
                 setText(res.data.errorText)
                 setInfo(res.data.info)
+                // setText('setText')
+                // setInfo('setInfo')
                 console.log(res)
             })
             .catch((e) => {
-                setCode(e.code)
-                if(e.response.status === 500){
+                console.log(e.response)
+                if (e.response.status === 500) {
                     setImage(error500)
                     setText(e.response.data.errorText)
+                    // setText('setText')
                     setInfo(e.response.data.info)
-                }else if ( e.response.status === 400){
+                    // setInfo('setInfo')
+                } else if (e.response.status === 400) {
                     setImage(error400)
+                    // setText('setText')
                     setText(e.response.data.errorText)
+                    // setInfo('setInfo')
                     setInfo(e.response.data.info)
-                }else {
+                } else {
                     setImage(errorUnknown)
                 }
-                setInfo(e.message)
+                setInfo(e.code)
 
-                console.log(e)
                 // дописать
 
             })
@@ -72,7 +77,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        disabled={info === '...loading' }
+                        disabled={info === '...loading'}
                         // дописать
 
                     >
@@ -82,7 +87,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
-                        disabled={info === '...loading' }
+                        disabled={info === '...loading'}
                         // дописать
 
                     >
@@ -92,7 +97,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
-                        disabled={info === '...loading' }
+                        disabled={info === '...loading'}
                         // дописать
 
                     >
@@ -102,7 +107,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
-                        disabled={info === '...loading' }
+                        disabled={info === '...loading'}
                         // дописать
 
                     >
